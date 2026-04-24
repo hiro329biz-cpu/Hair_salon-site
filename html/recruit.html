@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>採用・求人情報 | Fleur Beauty Salon 表参道</title>
+  <meta name="description" content="Fleur Beauty Salonの採用・求人情報。スタイリスト・アシスタント募集中。表参道のプライベートサロンで一緒に働きませんか。週休2日・社保完備・技術講習費補助あり。">
+  <meta name="keywords" content="美容師 求人 表参道,美容室 採用 渋谷,スタイリスト 募集,アシスタント 求人 表参道">
+  <link rel="canonical" href="https://fleur-salon.jp/recruit.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="採用・求人情報 | Fleur Beauty Salon 表参道">
+  <meta property="og:description" content="スタイリスト・アシスタント募集中。週休2日・社保完備・技術講習費補助あり。">
+  <meta property="og:url" content="https://fleur-salon.jp/recruit.html">
+  <meta property="og:image" content="https://fleur-salon.jp/images/fleur-beauty-salon-hero-1.webp">
+  <meta property="og:site_name" content="Fleur Beauty Salon">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <style>
+    /* --- Recruit Page --- */
+    .recruit-lead {
+      max-width: 600px;
+      margin: 0 auto var(--space-5xl);
+      text-align: center;
+    }
+    .recruit-lead__text {
+      font-size: 0.875rem;
+      line-height: 2;
+      color: var(--color-text-light);
+    }
+
+    .recruit-values {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-xl);
+      margin-bottom: var(--space-5xl);
+    }
+    .recruit-value {
+      text-align: center;
+      padding: var(--space-2xl) var(--space-xl);
+      border: 1px solid var(--color-border);
+    }
+    .recruit-value__num {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      color: var(--gray-300);
+      margin-bottom: var(--space-md);
+    }
+    .recruit-value__title {
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: var(--space-sm);
+    }
+    .recruit-value__text {
+      font-size: 0.8125rem;
+      color: var(--color-text-light);
+      line-height: 1.8;
+    }
+
+    .recruit-jobs {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xl);
+      margin-bottom: var(--space-5xl);
+    }
+    .recruit-job {
+      border: 1px solid var(--color-border);
+      padding: var(--space-2xl) var(--space-3xl);
+    }
+    .recruit-job__header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: var(--space-xl);
+      padding-bottom: var(--space-lg);
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .recruit-job__title {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+    }
+    .recruit-job__badge {
+      font-size: 0.6875rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      border: 1px solid var(--color-border);
+      padding: 0.25em 0.75em;
+    }
+    .recruit-job__table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8125rem;
+    }
+    .recruit-job__table tr {
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .recruit-job__table tr:last-child {
+      border-bottom: none;
+    }
+    .recruit-job__table th {
+      width: 140px;
+      padding: var(--space-md) 0;
+      color: var(--color-text-muted);
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      vertical-align: top;
+      white-space: nowrap;
+    }
+    .recruit-job__table td {
+      padding: var(--space-md) 0;
+      color: var(--color-text-light);
+      line-height: 1.8;
+    }
+
+    .recruit-flow {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      margin-bottom: var(--space-5xl);
+      position: relative;
+    }
+    .recruit-flow::before {
+      content: '';
+      position: absolute;
+      top: 28px;
+      left: 10%;
+      right: 10%;
+      height: 1px;
+      background: var(--color-border);
+      z-index: 0;
+    }
+    .recruit-flow__step {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .recruit-flow__num {
+      width: 56px;
+      height: 56px;
+      border: 1px solid var(--color-text);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto var(--space-md);
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 400;
+      background: var(--color-bg);
+    }
+    .recruit-flow__label {
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      color: var(--color-text-light);
+      line-height: 1.6;
+    }
+
+    .recruit-contact {
+      max-width: 560px;
+      margin: 0 auto;
+      text-align: center;
+      padding: var(--space-4xl);
+      background: var(--color-bg-alt);
+    }
+    .recruit-contact__text {
+      font-size: 0.8125rem;
+      color: var(--color-text-light);
+      line-height: 2;
+      margin-bottom: var(--space-2xl);
+    }
+    .recruit-contact__email {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+      color: var(--color-text);
+      display: block;
+      margin-bottom: var(--space-xl);
+      text-decoration: none;
+    }
+    .recruit-contact__email:hover {
+      color: var(--gray-600);
+    }
+    .recruit-contact__note {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      letter-spacing: 0.05em;
+    }
+
+    @media (max-width: 768px) {
+      .recruit-values {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+      }
+      .recruit-job {
+        padding: var(--space-xl) var(--space-lg);
+      }
+      .recruit-job__header {
+        flex-direction: column;
+        gap: var(--space-sm);
+      }
+      .recruit-job__table th {
+        width: 100px;
+        font-size: 0.75rem;
+      }
+      .recruit-flow {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+      }
+      .recruit-flow::before {
+        top: 0;
+        bottom: 0;
+        left: 27px;
+        right: auto;
+        width: 1px;
+        height: auto;
+      }
+      .recruit-flow__step {
+        display: flex;
+        align-items: center;
+        gap: var(--space-lg);
+        text-align: left;
+      }
+      .recruit-flow__num {
+        flex-shrink: 0;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="../index.html" class="header__logo">Fleur<span>.</span></a>
+      <nav class="nav">
+        <a href="../index.html" class="nav__link">Home</a>
+        <a href="menu.html" class="nav__link">Menu</a>
+        <a href="staff.html" class="nav__link">Stylist</a>
+        <a href="gallery.html" class="nav__link">Catalog</a>
+        <a href="access.html" class="nav__link">Salon</a>
+        <a href="reservation.html" class="btn btn--primary btn--sm nav__cta">Reserve</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く"><span class="hamburger__bar"></span><span class="hamburger__bar"></span><span class="hamburger__bar"></span></button>
+    </div>
+  </header>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="../index.html" class="mobile-nav__link">Home</a>
+    <a href="menu.html" class="mobile-nav__link">Menu</a>
+    <a href="staff.html" class="mobile-nav__link">Stylist</a>
+    <a href="gallery.html" class="mobile-nav__link">Catalog</a>
+    <a href="access.html" class="mobile-nav__link">Salon</a>
+    <div class="mobile-nav__cta"><a href="reservation.html" class="btn btn--primary">Reserve</a></div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">Recruit</h1>
+      <p class="page-header__subtitle">あなたの感性と技術を、Fleurで咲かせてください</p>
+    </div>
+  </section>
+
+  <!-- Lead -->
+  <section class="section">
+    <div class="container">
+      <div class="recruit-lead animate-on-scroll">
+        <p class="recruit-lead__text">
+          Fleurは、表参道という場所で「美しさ」と向き合い続けるサロンです。<br>
+          スタイリストとしての技術はもちろん、お客様一人ひとりと真摯に関わる姿勢を大切にしています。<br>
+          成長を望む方、美容を通じて人を幸せにしたい方、ぜひ私たちと一緒に働きましょう。
+        </p>
+      </div>
+
+      <!-- Values -->
+      <div class="section-header animate-on-scroll">
+        <p class="section-title-en">Our Values</p>
+        <h2 class="section-title-ja">Fleurが大切にすること</h2>
+      </div>
+      <div class="recruit-values animate-on-scroll">
+        <div class="recruit-value">
+          <p class="recruit-value__num">01</p>
+          <p class="recruit-value__title">Craft</p>
+          <p class="recruit-value__text">技術を磨くことを惜しまない。定期的な社内勉強会と外部セミナーで、常に最前線の技術を学べる環境を整えています。</p>
+        </div>
+        <div class="recruit-value">
+          <p class="recruit-value__num">02</p>
+          <p class="recruit-value__title">Harmony</p>
+          <p class="recruit-value__text">スタッフ同士がリスペクトし合える職場を目指しています。チームとして成長し、お互いの強みを活かし合える関係性を大切にします。</p>
+        </div>
+        <div class="recruit-value">
+          <p class="recruit-value__num">03</p>
+          <p class="recruit-value__title">Balance</p>
+          <p class="recruit-value__text">美容師としてのキャリアと、豊かなプライベートは両立できると考えています。週休2日制・シフト制で働きやすい環境をつくっています。</p>
+        </div>
+      </div>
+
+      <!-- Jobs -->
+      <div class="section-header animate-on-scroll">
+        <p class="section-title-en">Open Positions</p>
+        <h2 class="section-title-ja">募集職種</h2>
+      </div>
+      <div class="recruit-jobs">
+        <div class="recruit-job animate-on-scroll">
+          <div class="recruit-job__header">
+            <h3 class="recruit-job__title">Stylist</h3>
+            <span class="recruit-job__badge">正社員・パート</span>
+          </div>
+          <table class="recruit-job__table">
+            <tr>
+              <th>仕事内容</th>
+              <td>ヘアカット・カラー・パーマ等の美容施術全般。カウンセリングからアフターフォローまで一貫してご担当いただきます。</td>
+            </tr>
+            <tr>
+              <th>応募資格</th>
+              <td>美容師免許取得者（スタイリストデビュー済みの方歓迎）。経験年数は問いません。</td>
+            </tr>
+            <tr>
+              <th>給与</th>
+              <td>月給 240,000円〜（経験・スキルにより優遇）<br>各種手当・インセンティブあり</td>
+            </tr>
+            <tr>
+              <th>勤務時間</th>
+              <td>9:00〜20:00（シフト制）</td>
+            </tr>
+            <tr>
+              <th>休日・休暇</th>
+              <td>週休2日制（月9〜10日）／年次有給休暇／慶弔休暇</td>
+            </tr>
+            <tr>
+              <th>待遇・福利厚生</th>
+              <td>社会保険完備／交通費全額支給／社割あり／セミナー費用補助</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="recruit-job animate-on-scroll">
+          <div class="recruit-job__header">
+            <h3 class="recruit-job__title">Assistant</h3>
+            <span class="recruit-job__badge">正社員</span>
+          </div>
+          <table class="recruit-job__table">
+            <tr>
+              <th>仕事内容</th>
+              <td>スタイリストのアシスタント業務（シャンプー・カラー塗布・施術補助等）。スタイリストデビューに向けた技術習得が主な目標です。</td>
+            </tr>
+            <tr>
+              <th>応募資格</th>
+              <td>美容師免許取得者または取得見込みの方。美容が好きで、チームとして働くことが好きな方。</td>
+            </tr>
+            <tr>
+              <th>給与</th>
+              <td>月給 200,000円〜<br>デビュー後は昇給あり</td>
+            </tr>
+            <tr>
+              <th>勤務時間</th>
+              <td>9:00〜20:00（シフト制）</td>
+            </tr>
+            <tr>
+              <th>休日・休暇</th>
+              <td>週休2日制（月9〜10日）／年次有給休暇／慶弔休暇</td>
+            </tr>
+            <tr>
+              <th>待遇・福利厚生</th>
+              <td>社会保険完備／交通費全額支給／社割あり／技術講習費用負担</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- Flow -->
+      <div class="section-header animate-on-scroll">
+        <p class="section-title-en">Selection Flow</p>
+        <h2 class="section-title-ja">選考の流れ</h2>
+      </div>
+      <div class="recruit-flow animate-on-scroll">
+        <div class="recruit-flow__step">
+          <div class="recruit-flow__num">01</div>
+          <p class="recruit-flow__label">メールにて<br>ご応募</p>
+        </div>
+        <div class="recruit-flow__step">
+          <div class="recruit-flow__num">02</div>
+          <p class="recruit-flow__label">書類選考<br>（3営業日以内）</p>
+        </div>
+        <div class="recruit-flow__step">
+          <div class="recruit-flow__num">03</div>
+          <p class="recruit-flow__label">一次面接<br>（オンライン可）</p>
+        </div>
+        <div class="recruit-flow__step">
+          <div class="recruit-flow__num">04</div>
+          <p class="recruit-flow__label">サロン見学・<br>技術チェック</p>
+        </div>
+        <div class="recruit-flow__step">
+          <div class="recruit-flow__num">05</div>
+          <p class="recruit-flow__label">内定・<br>入社日調整</p>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="recruit-contact animate-on-scroll">
+        <p class="recruit-contact__text">
+          履歴書（写真貼付）と職務経歴書をPDFにて下記アドレスへお送りください。<br>
+          件名に「採用応募：氏名」とご記入いただけますと幸いです。
+        </p>
+        <a href="mailto:recruit@fleur-salon.jp" class="recruit-contact__email">recruit@fleur-salon.jp</a>
+        <a href="reservation.html" class="btn btn--primary">サロン見学を予約する</a>
+        <p class="recruit-contact__note" style="margin-top: var(--space-lg);">お電話でのお問い合わせ：03-1234-5678（火〜日 10:00〜19:00）</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__brand">Fleur<span>.</span></p>
+      <div class="footer__nav-row">
+        <a href="../index.html" class="footer__nav-link">Home</a>
+        <a href="menu.html" class="footer__nav-link">Menu</a>
+        <a href="staff.html" class="footer__nav-link">Stylist</a>
+        <a href="gallery.html" class="footer__nav-link">Catalog</a>
+        <a href="access.html" class="footer__nav-link">Salon</a>
+        <a href="reservation.html" class="footer__nav-link">Reserve</a>
+        <a href="recruit.html" class="footer__nav-link">Recruit</a>
+      </div>
+      <div class="footer__info">
+        <p>東京都渋谷区表参道3-15-8 フルールビル 2F</p>
+        <p>03-1234-5678 | info@fleur-salon.jp</p>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Fleur Beauty Salon. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
